@@ -41,17 +41,19 @@ router.post('/signup', function(req, res){
       })(req, res);
     }
     else { // user messed up they already have a login
-      // TODO send user some sort of error message
+      req.flash('error', 'Please login');
       res.redirect('/auth/login');
     }
   }).catch(function(err){
-    console.log(err);
-    res.send(err)
+    req.flash('error', err.message);
+    res.redirect('/auth/signup');
   });
 });
 
 router.get('/logout', function(req, res){
-  res.send('logout form page')
+  req.logout();// logs out of session
+  req.flash('success', 'Successfully logged out');
+  res.redirect('/')
 })
 
 module.exports = router;
