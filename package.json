@@ -1,8 +1,8 @@
 {
-  "name": "auth-boiler",
+  "name": "raptor_report",
   "version": "1.0.0",
-  "description": "Boilerplate for future use",
-  "repository": "https://github.com/nikotsafos/auth-boiler",
+  "description": "Identify birds with eBirds",
+  "repository": "https://github.com/nikotsafos/raptor_report",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
