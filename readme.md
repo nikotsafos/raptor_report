@@ -24,8 +24,6 @@ Content coming soon!
 | password | String | hashed with bcrypt |
 | dob | Date | - |
 
-> NOTE: Change these fields in both the model and migration files BEFORE running
-sequelize db:migrate
 
 ### Default Routes Supplied
 
